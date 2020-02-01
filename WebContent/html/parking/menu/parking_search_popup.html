@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".search_list").load("parking_list.html");
+		});
+	</script>
+</head>
+<body>
+	<div name="outer" style="border:1px solid;padding:10px;width:20%;text-align:center;">
+		<div name="search_menu" style="border:1px solid;">
+			<input type="text" name="input_search" value="검색어 입력" style="width:70%;">
+			<input type="button" name="btn_filter" value="필터" style="width:20%;"><br/>
+			<input type="button" name="btn_search" value="검색" style="width:40%;">
+			<input type="button" name="btn_cancel" value="취소"style="width:40%;">
+		</div>
+		<div class="search_list" style="border:1px solid;width:100%;">
+		</div>
+	</div>
+</body>
+</html>

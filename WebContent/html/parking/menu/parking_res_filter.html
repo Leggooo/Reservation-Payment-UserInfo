@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+</head>
+<body>
+	<div name="outer" style="border:1px solid;padding:10px;width:25%;text-align:center;">
+		<div name="filters">
+			<div name="isInOut" style="padding:3px;">
+				<div class="isInOutBtns" role="group" aria-label="Basic example">
+					여석없음 포함
+				  <button type="button" class="btn btn-secondary">Y</button>
+				  <button type="button" class="btn btn-secondary">N</button>
+				</div>
+			</div>
+			<div name="isPublic" style="padding:3px;">
+				<div class="isPublicBtns" role="group" aria-label="Basic example">
+				공영 주차장
+				  <button type="button" class="btn btn-secondary">Y</button>
+				  <button type="button" class="btn btn-secondary">N</button>
+				</div>
+			</div>
+			<div name="isElecCharging" style="padding:3px;">
+				<div class="isElecChargingBtns" role="group" aria-label="Basic example">
+				전기충전소
+				  <button type="button" class="btn btn-secondary">Y</button>
+				  <button type="button" class="btn btn-secondary">N</button>
+				</div>
+			</div>
+			<div name="isInOut" style="padding:3px;">
+				<div class="isInOutBtns" role="group" aria-label="Basic example">
+				실내/야외
+				  <button type="button" class="btn btn-secondary">실내</button>
+				  <button type="button" class="btn btn-secondary">야외</button>
+				</div>
+			</div>
+			<div name="price" style="padding:3px;display:inline;">
+				<div class="dropdown" style="display:inline;">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    	요금 분류
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">기본 요금</a>
+				    <a class="dropdown-item" href="#">시간당 요금</a>
+				  </div>
+				  <div class="price_input" style="display:inline;">
+					<input type="int" name="min_price" value="0" style="display:inline;width:20%;">
+					<input type="int" name="max_price" value="100" style="display:inline;width:20%;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div name="buttons" style="width:100%;">
+			<input type="button" name="confirm" value="확인" style="width:40%;">
+			<input type="button" name="cancel" value="취소" style="width:40%;">
+		</div>
+	</div>
+</body>
+</html>
